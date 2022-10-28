@@ -6,7 +6,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["Nunito Sans", "sans-serif", ...defaultTheme.fontFamily.sans,],
+        typewriter: ["Cabin", "sans-serif", ...defaultTheme.fontFamily.sans],
+        hero_title: [
+          "Work Sans",
+          "sans-serif",
+          ...defaultTheme.fontFamily.sans,
+        ],
+      },
+    },
   },
   plugins: [],
 };
