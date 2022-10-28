@@ -1,5 +1,14 @@
+import "../styles/globals.css";
+import SEO from "./components/SEO";
+
+
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <SEO />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp
+export default MyApp;
